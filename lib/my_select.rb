@@ -6,7 +6,7 @@ def my_select(collection)
  
  while counter < collection.size
   ary << yield(collection[counter])
-  if ary[counter] == "true"
+  if ary[counter]
     ary2 << collection[counter]
   end
   counter += 1
